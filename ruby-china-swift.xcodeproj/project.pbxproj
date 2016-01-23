@@ -14,6 +14,8 @@
 		C8D84F131C5356C2004F3D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D84F111C5356C2004F3D19 /* LaunchScreen.storyboard */; };
 		C8D84F1E1C5356C2004F3D19 /* ruby_china_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F1D1C5356C2004F3D19 /* ruby_china_swiftTests.swift */; };
 		C8D84F291C5356C2004F3D19 /* ruby_china_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F281C5356C2004F3D19 /* ruby_china_swiftUITests.swift */; };
+		C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F381C5375F9004F3D19 /* HomeController.swift */; };
+		C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F3B1C53C696004F3D19 /* ClientApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C8D84F241C5356C2004F3D19 /* ruby-china-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ruby-china-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D84F281C5356C2004F3D19 /* ruby_china_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruby_china_swiftUITests.swift; sourceTree = "<group>"; };
 		C8D84F2A1C5356C2004F3D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D84F381C5375F9004F3D19 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		C8D84F3B1C53C696004F3D19 /* ClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		C8D84F071C5356C2004F3D19 /* ruby-china-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8D84F3A1C53C65F004F3D19 /* APIs */,
 				C8D84F081C5356C2004F3D19 /* AppDelegate.swift */,
 				C8D84F0A1C5356C2004F3D19 /* ViewController.swift */,
 				C8D84F0C1C5356C2004F3D19 /* Main.storyboard */,
 				C8D84F0F1C5356C2004F3D19 /* Assets.xcassets */,
 				C8D84F111C5356C2004F3D19 /* LaunchScreen.storyboard */,
 				C8D84F141C5356C2004F3D19 /* Info.plist */,
+				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
 			);
 			path = "ruby-china-swift";
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				C8D84F2A1C5356C2004F3D19 /* Info.plist */,
 			);
 			path = "ruby-china-swiftUITests";
+			sourceTree = "<group>";
+		};
+		C8D84F3A1C53C65F004F3D19 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				C8D84F3B1C53C696004F3D19 /* ClientApi.swift */,
+			);
+			name = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			files = (
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
+				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
+				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
