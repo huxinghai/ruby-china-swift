@@ -9,9 +9,7 @@
 import UIKit
 
 class ViewController: UITabBarController {
-    
-    var homeController :HomeController?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ClientApi.topics { (items) -> Void in

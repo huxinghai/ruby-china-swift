@@ -16,6 +16,8 @@
 		C8D84F291C5356C2004F3D19 /* ruby_china_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F281C5356C2004F3D19 /* ruby_china_swiftUITests.swift */; };
 		C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F381C5375F9004F3D19 /* HomeController.swift */; };
 		C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F3B1C53C696004F3D19 /* ClientApi.swift */; };
+		C8D84F3F1C54C70B004F3D19 /* string_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F3E1C54C70B004F3D19 /* string_extension.swift */; };
+		C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F401C54C953004F3D19 /* TopicsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C8D84F2A1C5356C2004F3D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8D84F381C5375F9004F3D19 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C8D84F3B1C53C696004F3D19 /* ClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
+		C8D84F3E1C54C70B004F3D19 /* string_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = string_extension.swift; sourceTree = "<group>"; };
+		C8D84F401C54C953004F3D19 /* TopicsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		C8D84F071C5356C2004F3D19 /* ruby-china-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8D84F3D1C54C6ED004F3D19 /* init */,
 				C8D84F3A1C53C65F004F3D19 /* APIs */,
 				C8D84F081C5356C2004F3D19 /* AppDelegate.swift */,
 				C8D84F0A1C5356C2004F3D19 /* ViewController.swift */,
@@ -109,6 +114,7 @@
 				C8D84F111C5356C2004F3D19 /* LaunchScreen.storyboard */,
 				C8D84F141C5356C2004F3D19 /* Info.plist */,
 				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
+				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
 			);
 			path = "ruby-china-swift";
 			sourceTree = "<group>";
@@ -137,6 +143,14 @@
 				C8D84F3B1C53C696004F3D19 /* ClientApi.swift */,
 			);
 			name = APIs;
+			sourceTree = "<group>";
+		};
+		C8D84F3D1C54C6ED004F3D19 /* init */ = {
+			isa = PBXGroup;
+			children = (
+				C8D84F3E1C54C70B004F3D19 /* string_extension.swift */,
+			);
+			name = init;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D84F3F1C54C70B004F3D19 /* string_extension.swift in Sources */,
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
 				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
+				C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +514,7 @@
 				C8D84F2F1C5356C2004F3D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8D84F301C5356C2004F3D19 /* Build configuration list for PBXNativeTarget "ruby-china-swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				C8D84F321C5356C2004F3D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8D84F331C5356C2004F3D19 /* Build configuration list for PBXNativeTarget "ruby-china-swiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				C8D84F351C5356C2004F3D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
