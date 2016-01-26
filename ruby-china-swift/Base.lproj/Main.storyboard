@@ -72,7 +72,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="SxF-aZ-oxF" secondAttribute="trailing" constant="-20" id="6pk-Ne-02Q"/>
                             <constraint firstItem="SxF-aZ-oxF" firstAttribute="leading" secondItem="WZF-WW-Ija" secondAttribute="leadingMargin" constant="-20" id="a0O-f4-t3Y"/>
                             <constraint firstItem="3x1-44-kq3" firstAttribute="top" secondItem="SxF-aZ-oxF" secondAttribute="bottom" id="emF-fk-8Q8"/>
-                            <constraint firstItem="SxF-aZ-oxF" firstAttribute="top" secondItem="WZF-WW-Ija" secondAttribute="topMargin" id="fMG-Jh-YWS"/>
+                            <constraint firstItem="SxF-aZ-oxF" firstAttribute="top" secondItem="WZF-WW-Ija" secondAttribute="topMargin" constant="20" id="fMG-Jh-YWS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="精帖" image="ic_tab_topic" id="A3o-bU-F7b"/>
@@ -141,7 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4qA-BE-oia" firstAttribute="top" secondItem="oRf-dh-0nT" secondAttribute="bottom" id="K8X-4Z-NxT"/>
-                            <constraint firstItem="oRf-dh-0nT" firstAttribute="top" secondItem="Qqp-Mb-shs" secondAttribute="topMargin" id="dqm-7n-dci"/>
+                            <constraint firstItem="oRf-dh-0nT" firstAttribute="top" secondItem="Qqp-Mb-shs" secondAttribute="topMargin" constant="20" id="dqm-7n-dci"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oRf-dh-0nT" secondAttribute="trailing" constant="-20" id="mxL-6F-D50"/>
                             <constraint firstItem="oRf-dh-0nT" firstAttribute="leading" secondItem="Qqp-Mb-shs" secondAttribute="leadingMargin" constant="-20" id="sou-Zy-KJ9"/>
                         </constraints>

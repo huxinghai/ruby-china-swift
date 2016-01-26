@@ -49,7 +49,7 @@ class ClientApi{
             do {
                 let results = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as? NSDictionary
                 res(c: (results!["topics"] as? NSArray)!)
-                NSLog("\(results)")
+//                NSLog("\(results)")
             }catch let error as NSError {
                 NSLog("\(error)")
             }
