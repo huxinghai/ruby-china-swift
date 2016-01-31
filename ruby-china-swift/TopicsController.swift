@@ -16,10 +16,13 @@ class TopicsController: BaseListController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        self.navigationItem.title = "社区"
+        
         ClientApi.topics(["type": "last_actived"]){ (items) -> Void in
             NSLog("Topic controller data.....")
             self.dataSource = items as NSArray
             self.tableView.reloadData()
         }
     }
+    
 }

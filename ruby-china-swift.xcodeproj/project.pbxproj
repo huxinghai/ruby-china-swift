@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342821C57C4D300F6D798 /* BaseListController.swift */; };
+		C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342851C5A595000F6D798 /* TopicCell.swift */; };
+		C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342871C5E113100F6D798 /* TopicDetailController.swift */; };
 		C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F081C5356C2004F3D19 /* AppDelegate.swift */; };
 		C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F0A1C5356C2004F3D19 /* ViewController.swift */; };
 		C8D84F0E1C5356C2004F3D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D84F0C1C5356C2004F3D19 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		C8D342821C57C4D300F6D798 /* BaseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseListController.swift; path = ../BaseListController.swift; sourceTree = "<group>"; };
+		C8D342851C5A595000F6D798 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		C8D342871C5E113100F6D798 /* TopicDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailController.swift; sourceTree = "<group>"; };
 		C8D84F051C5356C2004F3D19 /* ruby-china-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruby-china-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D84F081C5356C2004F3D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D84F0A1C5356C2004F3D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8D342841C5A592400F6D798 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8D342851C5A595000F6D798 /* TopicCell.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		C8D84EFC1C5356C1004F3D19 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		C8D84F071C5356C2004F3D19 /* ruby-china-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8D342841C5A592400F6D798 /* controllers */,
 				C8D84F3D1C54C6ED004F3D19 /* init */,
 				C8D84F3A1C53C65F004F3D19 /* APIs */,
 				C8D84F081C5356C2004F3D19 /* AppDelegate.swift */,
@@ -118,6 +131,7 @@
 				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
 				C8D342821C57C4D300F6D798 /* BaseListController.swift */,
 				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
+				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
 			);
 			path = "ruby-china-swift";
 			sourceTree = "<group>";
@@ -288,12 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D84F3F1C54C70B004F3D19 /* string_extension.swift in Sources */,
+				C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */,
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
 				C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */,
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
 				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
 				C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */,
+				C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

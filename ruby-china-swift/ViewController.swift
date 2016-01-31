@@ -9,16 +9,18 @@
 import UIKit
 
 class ViewController: UITabBarController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        ClientApi.topics { (items) -> Void in
+        
+//        ClientApi.topics { (items) -> Void in
 //            for item in items{
 //                let tmp = item as? NSDictionary
 //                let title = tmp!["title"] as? String
 //                NSLog("===\(title)")
 //            }
-        }
+//        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     

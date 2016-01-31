@@ -9,19 +9,18 @@
 import UIKit
 
 class HomeController: BaseListController {
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "精帖"
         
         tableView.delegate = self
         tableView.dataSource = self
         ClientApi.topics(["type": "excellent"]){ (items) -> Void in
             self.dataSource = items as NSArray
-            NSLog("Home controller data.....")
             self.tableView.reloadData()
         }
-
     }
+
 }
