@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (3.2.0)
+  - DateTools (1.7.0)
+  - ObjectMapper (1.1.4)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SnapKit (0.19.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DateTools (~> 1.7.0)
+  - ObjectMapper (~> 1.1)
+  - SDWebImage (~> 3.7)
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  ObjectMapper: 09ff2ad156bb0e103d9dde9bfe10fbde78affeb2
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+
+PODFILE CHECKSUM: 74af39e205fea3d31950192d2a587090cb3cb30e
+
+COCOAPODS: 1.0.0.beta.3
