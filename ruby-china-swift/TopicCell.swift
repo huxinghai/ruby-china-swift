@@ -25,21 +25,19 @@ class TopicCell: UITableViewCell {
         self.contentView.addSubview(self.author)
         self.contentView.addSubview(self.create_at)
         
-        // 标题
         self.titleLabel.numberOfLines = 0
         self.titleLabel.font = UIFont.systemFontOfSize(15)
-        // 头像
+        
         self.avatar.multipleTouchEnabled = true
         self.avatar.userInteractionEnabled = true
         self.avatar.layer.masksToBounds = true
         self.avatar.layer.cornerRadius = 5
-        // 作者
+
         self.author.font = UIFont.boldSystemFontOfSize(15)
-        // 日期
         self.create_at.textColor = UIColor.grayColor()
         self.create_at.font = UIFont.systemFontOfSize(12)
         
-        let padding: UIEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
+        let padding: UIEdgeInsets = UIEdgeInsetsMake(5, 8, 5, 8)
         
         self.avatar.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(padding.top)
@@ -70,7 +68,7 @@ class TopicCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func bind(data: Topic) -> CGFloat {
+    func bind(data: Topic) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ"
         let createAt = dateFormatter.dateFromString(data.created_at!)
@@ -80,7 +78,7 @@ class TopicCell: UITableViewCell {
         self.create_at.text = createAt!.timeAgoSinceNow()
         self.avatar.sd_setImageWithURL(NSURL(string: data.user!.avatar_url!))
         self.setNeedsLayout()
-        return 0
+        self.tag = data.id!
     }
     
 }

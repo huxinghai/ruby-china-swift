@@ -18,17 +18,19 @@ class BaseListController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(identid)
+        var cell: TopicCell? = tableView.dequeueReusableCellWithIdentifier(identid) as? TopicCell
         if(cell == nil){
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identid)
+            cell = TopicCell(style: UITableViewCellStyle.Default, reuseIdentifier: identid)
         }
         let topic = dataSource[indexPath.row] as? Topic
-        cell!.textLabel?.text = topic?.title
-        let avatar_url = NSURL(string: (topic?.user?.avatar_url)!)
-        cell!.imageView?.image = UIImage(data: NSData(contentsOfURL: avatar_url!)!)
-        cell!.tag = (topic?.id)!
+        cell?.bind(topic!)
+        
         return cell!;
     }
+    
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 50
+//    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier("topicDetail") as? TopicDetailController
@@ -36,4 +38,6 @@ class BaseListController: UIViewController, UITableViewDataSource, UITableViewDe
         controller?.topicId = cell?.tag
         self.navigationController?.pushViewController(controller!, animated: true)
     }
+    
+
 }
