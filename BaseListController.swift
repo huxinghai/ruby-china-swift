@@ -9,11 +9,10 @@
 import UIKit
 
 class BaseListController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    var dataSource = []
+    var dataSource: [Topic] = []
     let identid = "cellid"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        NSLog("Home controller data....\(dataSource.count).")
         return dataSource.count
     }
     
@@ -23,12 +22,11 @@ class BaseListController: UIViewController, UITableViewDataSource, UITableViewDe
         if(cell == nil){
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identid)
         }
-        let item = dataSource[indexPath.row] as? NSDictionary
-        cell!.textLabel?.text = item!["title"] as? String
-        let user: NSDictionary? = item!["user"] as? NSDictionary
-        let avatar_url = NSURL(string: (user!["avatar_url"] as? String)!)
+        let topic = dataSource[indexPath.row] as? Topic
+        cell!.textLabel?.text = topic?.title
+        let avatar_url = NSURL(string: (topic?.user?.avatar_url)!)
         cell!.imageView?.image = UIImage(data: NSData(contentsOfURL: avatar_url!)!)
-        cell!.tag = item!["id"] as! Int
+        cell!.tag = (topic?.id)!
         return cell!;
     }
     

@@ -17,7 +17,7 @@ class TopicDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "帖子详情"
-        let request = NSURLRequest(URL: NSURL(string: "https://ruby-china.org/topics/\(topicId)")!)
+        let request = NSURLRequest(URL: NSURL(string:  "\(URLs.baseURL)/topics/\(topicId)")!)
         webView.loadRequest(request)
     }
 }

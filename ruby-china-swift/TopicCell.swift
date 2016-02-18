@@ -77,7 +77,7 @@ class TopicCell: UITableViewCell {
         
         self.titleLabel.text = data.title
         self.author.text = data.user!.login
-        self.create_at.text = createAt.timeAgoSinceNow()
+        self.create_at.text = createAt!.timeAgoSinceNow()
         self.avatar.sd_setImageWithURL(NSURL(string: data.user!.avatar_url!))
         self.setNeedsLayout()
         return 0

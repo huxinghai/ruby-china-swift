@@ -17,8 +17,9 @@ class HomeController: BaseListController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        ClientApi.topics(["type": "excellent"]){ (items) -> Void in
-            self.dataSource = items as NSArray
+        ClientApi.topics(["type": "excellent"]){ (topics) -> Void in
+            NSLog("Home controller data....\(topics.count).")
+            self.dataSource = topics
             self.tableView.reloadData()
         }
     }

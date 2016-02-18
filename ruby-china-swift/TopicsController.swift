@@ -18,9 +18,9 @@ class TopicsController: BaseListController {
         
         self.navigationItem.title = "社区"
         
-        ClientApi.topics(["type": "last_actived"]){ (items) -> Void in
-            NSLog("Topic controller data.....")
-            self.dataSource = items as NSArray
+        ClientApi.topics(["type": "last_actived"]){ (topics) -> Void in
+            NSLog("Topic controller data.....\(topics.count)")
+            self.dataSource = topics
             self.tableView.reloadData()
         }
     }

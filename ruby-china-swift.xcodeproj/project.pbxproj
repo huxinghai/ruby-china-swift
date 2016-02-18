@@ -13,6 +13,8 @@
 		C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342871C5E113100F6D798 /* TopicDetailController.swift */; };
 		C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3428E1C74BA9B00F6D798 /* Topic.swift */; };
 		C8D342911C74C0D800F6D798 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342901C74C0D800F6D798 /* User.swift */; };
+		C8D342971C75F18500F6D798 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342961C75F18500F6D798 /* URLs.swift */; };
+		C8D3429A1C76040B00F6D798 /* TopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342991C76040B00F6D798 /* TopicResponse.swift */; };
 		C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F081C5356C2004F3D19 /* AppDelegate.swift */; };
 		C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F0A1C5356C2004F3D19 /* ViewController.swift */; };
 		C8D84F0E1C5356C2004F3D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D84F0C1C5356C2004F3D19 /* Main.storyboard */; };
@@ -52,6 +54,9 @@
 		C8D342871C5E113100F6D798 /* TopicDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailController.swift; sourceTree = "<group>"; };
 		C8D3428E1C74BA9B00F6D798 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		C8D342901C74C0D800F6D798 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8D342921C75EF9400F6D798 /* ruby-china-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ruby-china-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8D342961C75F18500F6D798 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		C8D342991C76040B00F6D798 /* TopicResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicResponse.swift; sourceTree = "<group>"; };
 		C8D84F051C5356C2004F3D19 /* ruby-china-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruby-china-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D84F081C5356C2004F3D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D84F0A1C5356C2004F3D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +136,14 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		C8D342981C7603E000F6D798 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				C8D342991C76040B00F6D798 /* TopicResponse.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
 		C8D84EFC1C5356C1004F3D19 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +169,7 @@
 		C8D84F071C5356C2004F3D19 /* ruby-china-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8D342981C7603E000F6D798 /* entity */,
 				C8D3428D1C74BA6200F6D798 /* models */,
 				C8D342841C5A592400F6D798 /* controllers */,
 				C8D84F3A1C53C65F004F3D19 /* APIs */,
@@ -169,6 +183,7 @@
 				C8D342821C57C4D300F6D798 /* BaseListController.swift */,
 				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
 				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
+				C8D342921C75EF9400F6D798 /* ruby-china-swift-Bridging-Header.h */,
 			);
 			path = "ruby-china-swift";
 			sourceTree = "<group>";
@@ -195,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D84F3B1C53C696004F3D19 /* ClientApi.swift */,
+				C8D342961C75F18500F6D798 /* URLs.swift */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -381,9 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D3429A1C76040B00F6D798 /* TopicResponse.swift in Sources */,
 				C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */,
 				C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */,
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
+				C8D342971C75F18500F6D798 /* URLs.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
 				C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */,
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
@@ -531,10 +549,13 @@
 			baseConfigurationReference = 67E34F9E1D732F4B2A91D83B /* Pods-ruby-china-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "ruby-china-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kaka.ruby-china-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ruby-china-swift/ruby-china-swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -543,10 +564,12 @@
 			baseConfigurationReference = 3C23D998123971EC01DF7BDB /* Pods-ruby-china-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "ruby-china-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kaka.ruby-china-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ruby-china-swift/ruby-china-swift-Bridging-Header.h";
 			};
 			name = Release;
 		};

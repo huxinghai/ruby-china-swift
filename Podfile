@@ -8,4 +8,5 @@ target 'ruby-china-swift' do
     pod 'ObjectMapper', '~> 1.1'
     pod 'DateTools', '~> 1.7.0'
     pod 'SDWebImage', '~>3.7'
+    pod 'AlamofireObjectMapper', '~> 2.1'
 end
