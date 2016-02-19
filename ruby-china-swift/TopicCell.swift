@@ -11,7 +11,6 @@ import SnapKit
 class TopicCell: UITableViewCell {
     
     var titleLabel: UILabel = UILabel()
-    var bodyLabel: UILabel = UILabel()
     var avatar: UIImageView = UIImageView()
     var author: UILabel = UILabel()
     var create_at: UILabel = UILabel()
@@ -20,7 +19,6 @@ class TopicCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         self.contentView.addSubview(self.titleLabel)
-        self.contentView.addSubview(self.bodyLabel)
         self.contentView.addSubview(self.avatar)
         self.contentView.addSubview(self.author)
         self.contentView.addSubview(self.create_at)
@@ -37,7 +35,7 @@ class TopicCell: UITableViewCell {
         self.create_at.textColor = UIColor.grayColor()
         self.create_at.font = UIFont.systemFontOfSize(12)
         
-        let padding: UIEdgeInsets = UIEdgeInsetsMake(5, 8, 5, 8)
+        let padding: UIEdgeInsets = UIEdgeInsetsMake(5, 8, 8, 8)
         
         self.avatar.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(padding.top)

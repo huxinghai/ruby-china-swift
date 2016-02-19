@@ -122,7 +122,11 @@
 		C8D342841C5A592400F6D798 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C8D342851C5A595000F6D798 /* TopicCell.swift */,
+				C8D8EBBE1C774B1000F82C24 /* bases */,
+				C8D8EBBD1C774AEC00F82C24 /* cells */,
+				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
+				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
+				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -179,10 +183,6 @@
 				C8D84F0F1C5356C2004F3D19 /* Assets.xcassets */,
 				C8D84F111C5356C2004F3D19 /* LaunchScreen.storyboard */,
 				C8D84F141C5356C2004F3D19 /* Info.plist */,
-				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
-				C8D342821C57C4D300F6D798 /* BaseListController.swift */,
-				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
-				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
 				C8D342921C75EF9400F6D798 /* ruby-china-swift-Bridging-Header.h */,
 			);
 			path = "ruby-china-swift";
@@ -213,6 +213,22 @@
 				C8D342961C75F18500F6D798 /* URLs.swift */,
 			);
 			name = APIs;
+			sourceTree = "<group>";
+		};
+		C8D8EBBD1C774AEC00F82C24 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				C8D342851C5A595000F6D798 /* TopicCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		C8D8EBBE1C774B1000F82C24 /* bases */ = {
+			isa = PBXGroup;
+			children = (
+				C8D342821C57C4D300F6D798 /* BaseListController.swift */,
+			);
+			name = bases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

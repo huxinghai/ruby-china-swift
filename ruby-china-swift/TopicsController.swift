@@ -8,13 +8,16 @@
 
 import UIKit
 
-class TopicsController: BaseListController {
+class TopicsController: BaseTopicListController {
     
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableView.estimatedRowHeight = 55
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         self.navigationItem.title = "社区"
         

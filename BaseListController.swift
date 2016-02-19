@@ -8,10 +8,10 @@
 
 import UIKit
 
-class BaseListController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class BaseTopicListController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     var dataSource: [Topic] = []
     let identid = "cellid"
-    
+        
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -24,14 +24,16 @@ class BaseListController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         let topic = dataSource[indexPath.row] as? Topic
         cell?.bind(topic!)
+        cell?.titleLabel.numberOfLines = 0
+        cell?.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(tableView.bounds)
         
         return cell!;
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 50
-//    }
-    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+        
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier("topicDetail") as? TopicDetailController
         let cell = tableView.cellForRowAtIndexPath(indexPath)

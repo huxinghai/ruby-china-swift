@@ -12,7 +12,7 @@ import AlamofireObjectMapper
 class ClientApi{
     
     static func topics(options: [String: String],res: (topics: [Topic]) -> Void){
-        Alamofire.request(.GET, URLs.topicsURL, parameters: nil).responseObject{
+        Alamofire.request(.GET, URLs.topicsURL, parameters: options).responseObject{
             (response: Response<TopicResponse, NSError>) in
             if let data = response.result.value {
                 res(topics: data.topics!)
