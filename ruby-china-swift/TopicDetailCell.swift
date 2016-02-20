@@ -41,7 +41,7 @@ class TopicDetailCell: UITableViewCell{
         self.title.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(padding.left)
             make.top.equalTo(padding.top)
-            make.right.equalTo(padding.right)
+            make.right.equalTo(-5)
         }
         
         self.avatar.snp_makeConstraints { (make) -> Void in
@@ -64,7 +64,7 @@ class TopicDetailCell: UITableViewCell{
         self.content.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(self.avatar.snp_bottom).offset(12)
             make.left.equalTo(padding.left)
-            make.right.equalTo(-padding.right)
+            make.right.equalTo(-5)
         }
         
         self.contentView.snp_makeConstraints { (make) -> Void in
