@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1C18CFD79DD300B83861C45B /* Pods_ruby_china_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */; };
+		C8A449FC1C7866BB00105387 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FB1C7866BB00105387 /* MyController.swift */; };
+		C8A449FE1C7871D600105387 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FD1C7871D600105387 /* TopicDetailCell.swift */; };
+		C8A44A001C78721600105387 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FF1C78721600105387 /* ReplyCell.swift */; };
+		C8A44A021C78A3FF00105387 /* TopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A011C78A3FF00105387 /* TopicResponse.swift */; };
+		C8A44A041C78A7AF00105387 /* TopicDetailMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */; };
 		C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342821C57C4D300F6D798 /* BaseListController.swift */; };
 		C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342851C5A595000F6D798 /* TopicCell.swift */; };
 		C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342871C5E113100F6D798 /* TopicDetailController.swift */; };
 		C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3428E1C74BA9B00F6D798 /* Topic.swift */; };
 		C8D342911C74C0D800F6D798 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342901C74C0D800F6D798 /* User.swift */; };
 		C8D342971C75F18500F6D798 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342961C75F18500F6D798 /* URLs.swift */; };
-		C8D3429A1C76040B00F6D798 /* TopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342991C76040B00F6D798 /* TopicResponse.swift */; };
+		C8D3429A1C76040B00F6D798 /* TopicsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342991C76040B00F6D798 /* TopicsResponse.swift */; };
 		C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F081C5356C2004F3D19 /* AppDelegate.swift */; };
 		C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D84F0A1C5356C2004F3D19 /* ViewController.swift */; };
 		C8D84F0E1C5356C2004F3D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D84F0C1C5356C2004F3D19 /* Main.storyboard */; };
@@ -49,6 +54,11 @@
 		3C23D998123971EC01DF7BDB /* Pods-ruby-china-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruby-china-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ruby-china-swift/Pods-ruby-china-swift.release.xcconfig"; sourceTree = "<group>"; };
 		67E34F9E1D732F4B2A91D83B /* Pods-ruby-china-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruby-china-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruby-china-swift/Pods-ruby-china-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ruby_china_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A449FB1C7866BB00105387 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
+		C8A449FD1C7871D600105387 /* TopicDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
+		C8A449FF1C78721600105387 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
+		C8A44A011C78A3FF00105387 /* TopicResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicResponse.swift; sourceTree = "<group>"; };
+		C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailMeta.swift; sourceTree = "<group>"; };
 		C8D342821C57C4D300F6D798 /* BaseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseListController.swift; path = ../BaseListController.swift; sourceTree = "<group>"; };
 		C8D342851C5A595000F6D798 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		C8D342871C5E113100F6D798 /* TopicDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailController.swift; sourceTree = "<group>"; };
@@ -56,7 +66,7 @@
 		C8D342901C74C0D800F6D798 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8D342921C75EF9400F6D798 /* ruby-china-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ruby-china-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8D342961C75F18500F6D798 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		C8D342991C76040B00F6D798 /* TopicResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicResponse.swift; sourceTree = "<group>"; };
+		C8D342991C76040B00F6D798 /* TopicsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsResponse.swift; sourceTree = "<group>"; };
 		C8D84F051C5356C2004F3D19 /* ruby-china-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruby-china-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D84F081C5356C2004F3D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D84F0A1C5356C2004F3D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 				C8D84F381C5375F9004F3D19 /* HomeController.swift */,
 				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
 				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
+				C8A449FB1C7866BB00105387 /* MyController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -136,6 +147,7 @@
 			children = (
 				C8D3428E1C74BA9B00F6D798 /* Topic.swift */,
 				C8D342901C74C0D800F6D798 /* User.swift */,
+				C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -143,7 +155,8 @@
 		C8D342981C7603E000F6D798 /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				C8D342991C76040B00F6D798 /* TopicResponse.swift */,
+				C8D342991C76040B00F6D798 /* TopicsResponse.swift */,
+				C8A44A011C78A3FF00105387 /* TopicResponse.swift */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -219,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				C8D342851C5A595000F6D798 /* TopicCell.swift */,
+				C8A449FD1C7871D600105387 /* TopicDetailCell.swift */,
+				C8A449FF1C78721600105387 /* ReplyCell.swift */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -413,16 +428,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D3429A1C76040B00F6D798 /* TopicResponse.swift in Sources */,
+				C8D3429A1C76040B00F6D798 /* TopicsResponse.swift in Sources */,
+				C8A44A041C78A7AF00105387 /* TopicDetailMeta.swift in Sources */,
 				C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */,
+				C8A44A001C78721600105387 /* ReplyCell.swift in Sources */,
 				C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */,
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
 				C8D342971C75F18500F6D798 /* URLs.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
+				C8A449FE1C7871D600105387 /* TopicDetailCell.swift in Sources */,
 				C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */,
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
 				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
 				C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */,
+				C8A44A021C78A3FF00105387 /* TopicResponse.swift in Sources */,
+				C8A449FC1C7866BB00105387 /* MyController.swift in Sources */,
 				C8D342911C74C0D800F6D798 /* User.swift in Sources */,
 				C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */,
 			);

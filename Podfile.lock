@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (2.1.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
+  - Bypass (1.0.1)
   - DateTools (1.7.0)
   - ObjectMapper (1.1.4)
   - SDWebImage (3.7.5):
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper (~> 2.1)
+  - Bypass (~> 1.0.1)
   - DateTools (~> 1.7.0)
   - ObjectMapper (~> 1.1)
   - SDWebImage (~> 3.7)
@@ -21,11 +23,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
+  Bypass: 72a80e30ea645fb190eaecdc7d67a1904b76b7dc
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   ObjectMapper: 09ff2ad156bb0e103d9dde9bfe10fbde78affeb2
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
 
-PODFILE CHECKSUM: e5c9bf146c5ef9809b9a9db9a959896363db8a9e
+PODFILE CHECKSUM: b5b4e1b8442fc963d49b6b5b01d5e118d3fe5a57
 
 COCOAPODS: 1.0.0.beta.3

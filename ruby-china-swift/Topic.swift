@@ -22,6 +22,13 @@ class Topic: Mappable{
         
     }
     
+    func createdAtAgo() -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ"
+        let createAt = dateFormatter.dateFromString(self.created_at!)
+        return (createAt?.timeAgoSinceNow())!
+    }
+    
     func mapping(map: Map){
         id              <- map["id"]
         title           <- map["title"]
