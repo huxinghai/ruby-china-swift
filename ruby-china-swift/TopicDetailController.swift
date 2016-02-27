@@ -31,8 +31,8 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
             ClientApi.topicReplies(self.topicId){(replies: [Reply])
                 -> Void in
                 self.replies = replies
+                self.tableView.reloadData()
             }
-            self.tableView.reloadData()
         }
     }
     
@@ -46,16 +46,18 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var topicCell: TopicDetailCell?
         if(indexPath.row == 0){
+            var topicCell: TopicDetailCell?
             topicCell = TopicDetailCell(style: UITableViewCellStyle.Default, reuseIdentifier: "topicHeader")
             topicCell?.bind(self.topic!)
             topicCell?.selectionStyle = UITableViewCellSelectionStyle.None
+            return topicCell!
         }else{
-            
+            var replyCell: ReplyCell?
+            replyCell = ReplyCell(style: UITableViewCellStyle.Default, reuseIdentifier: "replyHeader")
+            replyCell?.bind(self.replies![indexPath.row-1])
+            return replyCell!
         }
-        
-        return topicCell!
     }
     
 }
