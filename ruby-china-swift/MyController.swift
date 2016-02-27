@@ -10,13 +10,9 @@ import UIKit
 
 class MyController: UIViewController {
     
-    
-    @IBOutlet weak var labView: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "我的"
-    
        
     }
 }
