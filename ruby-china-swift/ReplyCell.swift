@@ -29,6 +29,9 @@ class ReplyCell: UITableViewCell{
 
         let padding: UIEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
         
+        self.author.font = UIFont.boldSystemFontOfSize(15)
+        self.createdAt.font = UIFont.systemFontOfSize(12)
+        
         self.avatar.snp_makeConstraints{ (make) -> Void in
             make.left.equalTo(padding.left)
             make.top.equalTo(padding.top)
@@ -38,25 +41,30 @@ class ReplyCell: UITableViewCell{
         
         self.createdAt.snp_makeConstraints{ (make) -> Void in
             make.top.equalTo(padding.top)
-            make.right.equalTo(padding.right)
+            make.right.equalTo(padding.right).inset(10)
         }
         
         self.author.snp_makeConstraints{ (make) -> Void in
-            make.left.equalTo(self.avatar.snp_right)
+            make.left.equalTo(self.avatar.snp_right).offset(8)
             make.top.equalTo(padding.top)
         }
         
         self.body.snp_makeConstraints{ (make) -> Void in
-            make.left.equalTo(self.avatar.snp_right)
+            make.top.equalTo(self.author.snp_bottom)
+            make.left.equalTo(self.avatar.snp_right).offset(8)
             make.right.equalTo(-5)
         }
-
+        
+        self.contentView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(self)
+            make.bottom.equalTo(self.body.snp_bottom).inset(-padding.bottom)
+        }
         
     }
     
     func bind(reply: Reply){
         self.author.text = reply.user?.name
-        self.avatar.setImageWithURL(NSURL(string: reply.user!.avatar_url!))
+        self.avatar.sd_setImageWithURL(NSURL(string: reply.user!.avatar_url!))
         self.createdAt.text = reply.createdAtAgo()
         self.body.text = reply.body
     }
