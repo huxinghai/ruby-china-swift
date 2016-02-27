@@ -12,4 +12,7 @@ struct URLs {
     static let apiURL = baseURL + apiVersion
     
     static let topicsURL = apiURL + "/topics"
+    static let loginURL = apiURL + "/users/login"
+    
+    
 }

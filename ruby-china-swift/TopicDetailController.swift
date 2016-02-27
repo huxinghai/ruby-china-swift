@@ -13,7 +13,7 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableView: UITableView!
     var topicId: Int!
     var topic: Topic?
-
+    var replies: [Reply]?
 
     
     override func viewDidLoad() {
@@ -24,9 +24,14 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.footerViewForSection(0)
         
         ClientApi.topic(topicId){ (topic) -> Void in
             self.topic = topic
+            ClientApi.topicReplies(self.topicId){(replies: [Reply])
+                -> Void in
+                self.replies = replies
+            }
             self.tableView.reloadData()
         }
     }
@@ -34,7 +39,7 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(self.topic != nil){
-            return 1
+            return self.replies!.count + 1;
         }else{
             return 0
         }
@@ -46,9 +51,11 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
             topicCell = TopicDetailCell(style: UITableViewCellStyle.Default, reuseIdentifier: "topicHeader")
             topicCell?.bind(self.topic!)
             topicCell?.selectionStyle = UITableViewCellSelectionStyle.None
+        }else{
+            
         }
+        
         return topicCell!
-//        tableView.dequeueReusableHeaderFooterViewWithIdentifier(<#T##identifier: String##String#>)
     }
     
 }

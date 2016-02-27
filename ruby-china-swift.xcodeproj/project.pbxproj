@@ -13,6 +13,9 @@
 		C8A44A001C78721600105387 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FF1C78721600105387 /* ReplyCell.swift */; };
 		C8A44A021C78A3FF00105387 /* TopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A011C78A3FF00105387 /* TopicResponse.swift */; };
 		C8A44A041C78A7AF00105387 /* TopicDetailMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */; };
+		C8A44A061C81BC1E00105387 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A051C81BC1E00105387 /* LoginController.swift */; };
+		C8A44A081C81C05700105387 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A071C81C05700105387 /* Reply.swift */; };
+		C8A44A0A1C81C10F00105387 /* RepliesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A44A091C81C10F00105387 /* RepliesResponse.swift */; };
 		C8D342831C57C4D300F6D798 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342821C57C4D300F6D798 /* BaseListController.swift */; };
 		C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342851C5A595000F6D798 /* TopicCell.swift */; };
 		C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D342871C5E113100F6D798 /* TopicDetailController.swift */; };
@@ -59,6 +62,9 @@
 		C8A449FF1C78721600105387 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		C8A44A011C78A3FF00105387 /* TopicResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicResponse.swift; sourceTree = "<group>"; };
 		C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailMeta.swift; sourceTree = "<group>"; };
+		C8A44A051C81BC1E00105387 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C8A44A071C81C05700105387 /* Reply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
+		C8A44A091C81C10F00105387 /* RepliesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepliesResponse.swift; sourceTree = "<group>"; };
 		C8D342821C57C4D300F6D798 /* BaseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseListController.swift; path = ../BaseListController.swift; sourceTree = "<group>"; };
 		C8D342851C5A595000F6D798 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		C8D342871C5E113100F6D798 /* TopicDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				C8D84F401C54C953004F3D19 /* TopicsController.swift */,
 				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
 				C8A449FB1C7866BB00105387 /* MyController.swift */,
+				C8A44A051C81BC1E00105387 /* LoginController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 				C8D3428E1C74BA9B00F6D798 /* Topic.swift */,
 				C8D342901C74C0D800F6D798 /* User.swift */,
 				C8A44A031C78A7AF00105387 /* TopicDetailMeta.swift */,
+				C8A44A071C81C05700105387 /* Reply.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			children = (
 				C8D342991C76040B00F6D798 /* TopicsResponse.swift */,
 				C8A44A011C78A3FF00105387 /* TopicResponse.swift */,
+				C8A44A091C81C10F00105387 /* RepliesResponse.swift */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -430,6 +439,7 @@
 			files = (
 				C8D3429A1C76040B00F6D798 /* TopicsResponse.swift in Sources */,
 				C8A44A041C78A7AF00105387 /* TopicDetailMeta.swift in Sources */,
+				C8A44A081C81C05700105387 /* Reply.swift in Sources */,
 				C8D342861C5A595000F6D798 /* TopicCell.swift in Sources */,
 				C8A44A001C78721600105387 /* ReplyCell.swift in Sources */,
 				C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */,
@@ -441,8 +451,10 @@
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
 				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
 				C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */,
+				C8A44A061C81BC1E00105387 /* LoginController.swift in Sources */,
 				C8A44A021C78A3FF00105387 /* TopicResponse.swift in Sources */,
 				C8A449FC1C7866BB00105387 /* MyController.swift in Sources */,
+				C8A44A0A1C81C10F00105387 /* RepliesResponse.swift in Sources */,
 				C8D342911C74C0D800F6D798 /* User.swift in Sources */,
 				C8D342881C5E113100F6D798 /* TopicDetailController.swift in Sources */,
 			);

@@ -31,4 +31,18 @@ class ClientApi{
             
         }
     }
+    
+    static func login(username: String, password: String){
+//        Alamofire.request(.GET, "\(URLs.topicsURL)/\(id)").responseObject {
+    }
+    
+    static func topicReplies(topicId: Int, res: (replies: [Reply]) -> Void){
+        Alamofire.request(.GET, "\(URLs.topicsURL)/\(topicId)/replies").responseObject {
+            (response: Response<RepliesResponse, NSError>) -> Void in
+            if let data = response.result.value{
+                res(replies: data.replies!)
+            }
+            
+        }
+    }
 }
