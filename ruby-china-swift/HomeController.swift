@@ -31,7 +31,7 @@ class HomeController: BaseTopicListController {
 //        UIView.animateWithDuration(2, animations: {() -> Void in
 //            self.view.alpha = 1
 //        }) { (Bool) -> Void in
-//            loadImage.hidden = true
+//            loadImage.hidden = true  
 //        }
         loadRefreshControl(tableView)
         refreshData()
