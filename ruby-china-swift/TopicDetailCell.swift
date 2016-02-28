@@ -77,6 +77,7 @@ class TopicDetailCell: UITableViewCell{
     }
     
     func bind(topic: Topic){
+        
         self.title.text = topic.title
         self.author.text = topic.user?.name
         self.avatar.sd_setImageWithURL(NSURL(string: topic.user!.avatar_url!))

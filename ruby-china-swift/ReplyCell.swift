@@ -32,6 +32,7 @@ class ReplyCell: UITableViewCell{
         let padding: UIEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
         
         self.author.font = UIFont.boldSystemFontOfSize(15)
+        self.body.font = UIFont.boldSystemFontOfSize(15)
         self.createdAt.font = UIFont.systemFontOfSize(12)
         
         self.avatar.snp_makeConstraints{ (make) -> Void in
@@ -65,10 +66,17 @@ class ReplyCell: UITableViewCell{
     }
     
     func bind(reply: Reply){
+        let nsBody = (reply.body! as NSString)
+        let body = nsBody.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)
+        
         self.author.text = reply.user?.name
         self.avatar.sd_setImageWithURL(NSURL(string: reply.user!.avatar_url!))
         self.createdAt.text = reply.createdAtAgo()
-        self.body.text = reply.body
+        do{
+            let bodyAttr = try NSAttributedString(data: body!, options: [NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType], documentAttributes: nil)
+            
+            self.body.attributedText = bodyAttr
+        }catch{}
     }
 
 
