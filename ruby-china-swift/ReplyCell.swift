@@ -26,6 +26,8 @@ class ReplyCell: UITableViewCell{
         
         self.body.numberOfLines = 0
         self.body.lineBreakMode = NSLineBreakMode.ByCharWrapping
+        
+        self.selectionStyle = UITableViewCellSelectionStyle.None
 
         let padding: UIEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
         

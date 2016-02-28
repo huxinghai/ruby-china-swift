@@ -29,6 +29,8 @@ class TopicDetailCell: UITableViewCell{
         self.title.lineBreakMode = NSLineBreakMode.ByCharWrapping
         self.title.font = UIFont.boldSystemFontOfSize(20)
 
+        self.selectionStyle = UITableViewCellSelectionStyle.None
+
         
         self.content.numberOfLines = 0
         self.content.lineBreakMode = NSLineBreakMode.ByCharWrapping
