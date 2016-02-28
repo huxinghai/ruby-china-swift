@@ -14,7 +14,7 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
     var topicId: Int!
     var topic: Topic?
     var replies: [Reply]?
-
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +25,25 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.footerViewForSection(0)
+    
+        refreshControl.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "松手刷新")
+        tableView.addSubview(refreshControl)
         
+        refreshData()
+    }
+    
+    func refreshData(){
         ClientApi.topic(topicId){ (topic) -> Void in
             self.topic = topic
             ClientApi.topicReplies(self.topicId){(replies: [Reply])
                 -> Void in
                 self.replies = replies
                 self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
             }
         }
     }
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(self.topic != nil){
