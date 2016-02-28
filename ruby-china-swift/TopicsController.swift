@@ -25,14 +25,29 @@ class TopicsController: BaseTopicListController {
         refreshData()
     }
     
+    override func loadMore() {
+        fetchRemote{ (topics) -> Void in
+            topics.forEach({ (topic) -> () in
+                self.dataSource.append(topic)
+                self.tableView.reloadData()
+            })
+        }
+    }
+    
     override func refreshData(){
-        ClientApi.topics(["type": "last_actived"]){ (topics) -> Void in
+        fetchRemote{ (topics) -> Void in
             NSLog("Topic controller data.....\(topics.count)")
             self.dataSource = topics
             self.tableView.reloadData()
             super.refreshData()
         }
 
+    }
+    
+    func fetchRemote(success: (topics: [Topic]) -> Void){
+        ClientApi.topics(["type": "last_actived", "offset": self.page]){ (topics) -> Void in
+            success(topics: topics)
+        }
     }
     
 }

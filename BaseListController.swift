@@ -12,6 +12,7 @@ class BaseTopicListController: UIViewController, UITableViewDataSource, UITableV
     var dataSource: [Topic] = []
     let identid = "cellid"
     var refreshControl = UIRefreshControl()
+    var page = 1
         
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
@@ -27,6 +28,10 @@ class BaseTopicListController: UIViewController, UITableViewDataSource, UITableV
         cell?.bind(topic!)
         cell?.titleLabel.numberOfLines = 0
         cell?.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(tableView.bounds)
+        if(indexPath.row == dataSource.count-1){
+            page += 1
+            loadMore()
+        }
         
         return cell!;
     }
@@ -36,6 +41,10 @@ class BaseTopicListController: UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         controller?.topicId = cell?.tag
         self.navigationController?.pushViewController(controller!, animated: true)
+    }
+    
+    func loadMore(){
+        
     }
     
     

@@ -23,7 +23,7 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
         self.navigationItem.title = "帖子详情"
 //        tableView.backgroundColor = UIColor.redColor()
         
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.footerViewForSection(0)
     

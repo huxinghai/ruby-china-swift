@@ -11,7 +11,7 @@ import UIKit
 class HomeController: BaseTopicListController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    let scrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +37,27 @@ class HomeController: BaseTopicListController {
         refreshData()
     }
     
+    override func loadMore() {
+        fetchRemote{ (topics) -> Void in
+            topics.forEach({ (topic) -> () in
+                self.dataSource.append(topic)
+                self.tableView.reloadData()
+            })
+        }
+    }
+    
     override func refreshData(){
-        ClientApi.topics(["type": "excellent"]){ (topics) -> Void in
+        fetchRemote{ (topics) -> Void in
             NSLog("Home controller data....\(topics.count).")
             self.dataSource = topics
             self.tableView.reloadData()
             super.refreshControl.endRefreshing()
+        }
+    }
+    
+    func fetchRemote(success: (topics: [Topic]) -> Void){
+        ClientApi.topics(["type": "excellent", "offset": self.page]){ (topics) -> Void in
+            success(topics: topics)
         }
     }
 
