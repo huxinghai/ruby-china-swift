@@ -11,6 +11,7 @@ import UIKit
 class BaseTopicListController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     var dataSource: [Topic] = []
     let identid = "cellid"
+    var refreshControl = UIRefreshControl()
         
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
@@ -37,5 +38,16 @@ class BaseTopicListController: UIViewController, UITableViewDataSource, UITableV
         self.navigationController?.pushViewController(controller!, animated: true)
     }
     
+    
+    func loadRefreshControl(tableView: UITableView){
+        refreshControl.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "松手刷新")
+        tableView.addSubview(refreshControl)
+    }
+    
+    
+    func refreshData(){
+        refreshControl.endRefreshing()
+    }
 
 }

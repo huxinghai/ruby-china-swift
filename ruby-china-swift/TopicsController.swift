@@ -21,11 +21,18 @@ class TopicsController: BaseTopicListController {
         
         self.navigationItem.title = "社区"
         
+        loadRefreshControl(tableView)
+        refreshData()
+    }
+    
+    override func refreshData(){
         ClientApi.topics(["type": "last_actived"]){ (topics) -> Void in
             NSLog("Topic controller data.....\(topics.count)")
             self.dataSource = topics
             self.tableView.reloadData()
+            super.refreshData()
         }
+
     }
     
 }

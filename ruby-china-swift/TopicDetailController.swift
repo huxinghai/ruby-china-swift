@@ -21,7 +21,7 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         self.navigationItem.title = "帖子详情"
-        tableView.backgroundColor = UIColor.redColor()
+//        tableView.backgroundColor = UIColor.redColor()
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -29,8 +29,6 @@ class TopicDetailController: UIViewController, UITableViewDataSource, UITableVie
     
         refreshControl.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
         refreshControl.attributedTitle = NSAttributedString(string: "松手刷新")
-
-        refreshControl.frame = CGRect(x: 0, y: 30, width: refreshControl.bounds.width, height: refreshControl.bounds.height)
         tableView.addSubview(refreshControl)
         
         refreshData()

@@ -9,7 +9,9 @@
 import UIKit
 
 class HomeController: BaseTopicListController {
+    
     @IBOutlet weak var tableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +22,7 @@ class HomeController: BaseTopicListController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        ClientApi.topics(["type": "excellent"]){ (topics) -> Void in
-            NSLog("Home controller data....\(topics.count).")
-            self.dataSource = topics
-            self.tableView.reloadData()
-        }
-        
+
         let loadImage = UIImageView(image: UIImage(named: "big_logo"))
         loadImage.frame = CGRectMake(0, 0, 80, 80)
         loadImage.center = self.view.center
@@ -35,6 +32,17 @@ class HomeController: BaseTopicListController {
             self.view.alpha = 1
         }) { (Bool) -> Void in
             loadImage.hidden = true
+        }
+        loadRefreshControl(tableView)
+        refreshData()
+    }
+    
+    override func refreshData(){
+        ClientApi.topics(["type": "excellent"]){ (topics) -> Void in
+            NSLog("Home controller data....\(topics.count).")
+            self.dataSource = topics
+            self.tableView.reloadData()
+            super.refreshControl.endRefreshing()
         }
     }
 
