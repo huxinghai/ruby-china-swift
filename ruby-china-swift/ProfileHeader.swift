@@ -27,8 +27,9 @@ class ProfileHeader: UIView{
         self.avatar.layer.cornerRadius = 5
         self.avatar.layer.borderWidth = 3
         self.avatar.layer.borderColor = UIColor.whiteColor().CGColor
+        self.avatar.image = UIImage(named: "avatar")
         
-        self.name.text = "名字"
+        self.name.text = "KaKa"
         self.name.userInteractionEnabled = true
         self.name.font = UIFont.boldSystemFontOfSize(16)
         
@@ -52,7 +53,7 @@ class ProfileHeader: UIView{
         self.addSubview(self.homepage)
         self.addSubview(self.topicType)
         
-        let padding: UIEdgeInsets = UIEdgeInsetsMake(60, 10, 8, 10)
+        let padding: UIEdgeInsets = UIEdgeInsetsMake(26, 10, 8, 10)
         self.avatar.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(padding.top)
             make.left.equalTo(padding.left)
@@ -69,12 +70,14 @@ class ProfileHeader: UIView{
         }
         self.edit.snp_makeConstraints { (make) -> Void in
             make.right.equalTo(-padding.right)
+            make.bottom.equalTo(self.avatar.snp_bottom)
             make.width.equalTo(90)
             make.height.equalTo(28)
         }
         
         self.homepage.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(self.profile.snp_bottom).inset(-5)
+            make.left.equalTo(padding.left)
         }
         
         self.topicType.snp_makeConstraints { (make) -> Void in
