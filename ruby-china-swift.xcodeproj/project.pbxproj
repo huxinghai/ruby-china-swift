@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C18CFD79DD300B83861C45B /* Pods_ruby_china_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */; };
 		C84AE05E1C9D5A2E002740DB /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84AE05D1C9D5A2E002740DB /* ProfileHeader.swift */; };
+		C84AE0601C9D7226002740DB /* MyTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84AE05F1C9D7226002740DB /* MyTopicCell.swift */; };
 		C8A449FC1C7866BB00105387 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FB1C7866BB00105387 /* MyController.swift */; };
 		C8A449FE1C7871D600105387 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FD1C7871D600105387 /* TopicDetailCell.swift */; };
 		C8A44A001C78721600105387 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FF1C78721600105387 /* ReplyCell.swift */; };
@@ -59,6 +60,7 @@
 		67E34F9E1D732F4B2A91D83B /* Pods-ruby-china-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruby-china-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruby-china-swift/Pods-ruby-china-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ruby_china_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84AE05D1C9D5A2E002740DB /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		C84AE05F1C9D7226002740DB /* MyTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTopicCell.swift; sourceTree = "<group>"; };
 		C8A449FB1C7866BB00105387 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 		C8A449FD1C7871D600105387 /* TopicDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
 		C8A449FF1C78721600105387 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				C8D342851C5A595000F6D798 /* TopicCell.swift */,
 				C8A449FD1C7871D600105387 /* TopicDetailCell.swift */,
 				C8A449FF1C78721600105387 /* ReplyCell.swift */,
+				C84AE05F1C9D7226002740DB /* MyTopicCell.swift */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				C8A44A001C78721600105387 /* ReplyCell.swift in Sources */,
 				C8D3428F1C74BA9B00F6D798 /* Topic.swift in Sources */,
 				C8D84F0B1C5356C2004F3D19 /* ViewController.swift in Sources */,
+				C84AE0601C9D7226002740DB /* MyTopicCell.swift in Sources */,
 				C8D342971C75F18500F6D798 /* URLs.swift in Sources */,
 				C8D84F091C5356C2004F3D19 /* AppDelegate.swift in Sources */,
 				C8A449FE1C7871D600105387 /* TopicDetailCell.swift in Sources */,

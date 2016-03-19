@@ -38,6 +38,7 @@ class ProfileHeader: UIView{
         
         self.edit.frame = CGRectMake(0, 0, 0, 0)
         self.edit.setTitle("编辑个人资料", forState: UIControlState.Normal)
+        self.edit.backgroundColor = UIColor.redColor()
         self.edit.titleLabel?.font = UIFont.boldSystemFontOfSize(12)
         
         self.homepage.text = "http://168ta.com"
@@ -45,6 +46,7 @@ class ProfileHeader: UIView{
         
         self.topicType.insertSegmentWithTitle("帖子", atIndex: 0, animated: true)
         self.topicType.insertSegmentWithTitle("回帖", atIndex: 1, animated: true)
+        self.topicType.selectedSegmentIndex = 0;
         
         self.addSubview(self.avatar)
         self.addSubview(self.name)
