@@ -20,6 +20,7 @@ class MyTopicCell: UITableViewCell{
         self.contentView.addSubview(create_at)
         
         self.titleLabel.numberOfLines = 0
+        self.titleLabel.contentHuggingPriorityForAxis(UILayoutConstraintAxis.Vertical)
         self.titleLabel.lineBreakMode =  NSLineBreakMode.ByCharWrapping
         self.titleLabel.font = UIFont.systemFontOfSize(15)
         
@@ -34,9 +35,14 @@ class MyTopicCell: UITableViewCell{
         
         self.titleLabel.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(padding.left)
+            make.right.equalTo(padding.right).inset(8)
             make.top.equalTo(padding.top).inset(20)
         }
-
+        
+        self.contentView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(self)
+            make.bottom.equalTo(self.titleLabel.snp_bottom).inset(-padding.bottom)
+        }
         
     }
     

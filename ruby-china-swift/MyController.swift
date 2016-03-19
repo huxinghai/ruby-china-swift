@@ -29,7 +29,7 @@ class MyController: UIViewController, UITableViewDelegate, UITableViewDataSource
         tableView?.delegate = self
         tableView?.dataSource = self
         
-        tableView?.estimatedRowHeight = 44
+        tableView?.estimatedRowHeight = 44.0
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.tableHeaderView = tableHeader
         tableView?.separatorInset = UIEdgeInsetsZero
