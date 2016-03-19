@@ -9,19 +9,12 @@
 import UIKit
 
 class HomeController: BaseTopicListController {
-    
-    @IBOutlet weak var tableView: UITableView!
+
     let scrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "精帖"
-        
-        tableView.estimatedRowHeight = 55
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        tableView.delegate = self
-        tableView.dataSource = self
 //
 //        let loadImage = UIImageView(image: UIImage(named: "big_logo"))
 //        loadImage.frame = CGRectMake(0, 0, 80, 80)
@@ -33,7 +26,7 @@ class HomeController: BaseTopicListController {
 //        }) { (Bool) -> Void in
 //            loadImage.hidden = true  
 //        }
-        loadRefreshControl(tableView)
+        loadRefreshControl(self.tableView)
         refreshData()
     }
     

@@ -47,6 +47,7 @@ class MyTopicCell: UITableViewCell{
     }
     
     func bind(topic: Topic){
+        self.tag = topic.id!
         titleLabel.text = topic.title
         create_at.text = topic.createdAtAgo()
     }

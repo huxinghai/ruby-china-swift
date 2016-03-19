@@ -13,7 +13,22 @@ class BaseTopicListController: UIViewController, UITableViewDataSource, UITableV
     let identid = "cellid"
     var refreshControl = UIRefreshControl()
     var page = 1
+    var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        self.edgesForExtendedLayout = UIRectEdge.None
+        
+        tableView = UITableView(frame: self.view.frame, style: UITableViewStyle.Plain)
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }

@@ -10,18 +10,12 @@ import UIKit
 
 class TopicsController: BaseTopicListController {
     
-    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        tableView.estimatedRowHeight = 55
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
+        super.viewDidLoad()
         self.navigationItem.title = "社区"
         
-        loadRefreshControl(tableView)
+        loadRefreshControl(self.tableView)
         refreshData()
     }
     

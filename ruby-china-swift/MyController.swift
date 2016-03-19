@@ -54,6 +54,13 @@ class MyController: UIViewController, UITableViewDelegate, UITableViewDataSource
         return cell!
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("topicDetail") as? TopicDetailController
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        controller?.topicId = cell?.tag
+        self.navigationController?.pushViewController(controller!, animated: true)
+    }
+    
     
     func segmentDidchange(segmented: UISegmentedControl){
         let type = segmented.selectedSegmentIndex == 0 ? "excellent" : "last_actived"
