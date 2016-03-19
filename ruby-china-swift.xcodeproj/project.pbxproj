@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C18CFD79DD300B83861C45B /* Pods_ruby_china_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */; };
+		C84AE05E1C9D5A2E002740DB /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84AE05D1C9D5A2E002740DB /* ProfileHeader.swift */; };
 		C8A449FC1C7866BB00105387 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FB1C7866BB00105387 /* MyController.swift */; };
 		C8A449FE1C7871D600105387 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FD1C7871D600105387 /* TopicDetailCell.swift */; };
 		C8A44A001C78721600105387 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A449FF1C78721600105387 /* ReplyCell.swift */; };
@@ -57,6 +58,7 @@
 		3C23D998123971EC01DF7BDB /* Pods-ruby-china-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruby-china-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ruby-china-swift/Pods-ruby-china-swift.release.xcconfig"; sourceTree = "<group>"; };
 		67E34F9E1D732F4B2A91D83B /* Pods-ruby-china-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruby-china-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruby-china-swift/Pods-ruby-china-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C01DDCB2958E7A8E09AF58FB /* Pods_ruby_china_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ruby_china_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84AE05D1C9D5A2E002740DB /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		C8A449FB1C7866BB00105387 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 		C8A449FD1C7871D600105387 /* TopicDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
 		C8A449FF1C78721600105387 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				C8D342871C5E113100F6D798 /* TopicDetailController.swift */,
 				C8A449FB1C7866BB00105387 /* MyController.swift */,
 				C8A44A051C81BC1E00105387 /* LoginController.swift */,
+				C84AE05D1C9D5A2E002740DB /* ProfileHeader.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				C8D84F391C5375F9004F3D19 /* HomeController.swift in Sources */,
 				C8D84F3C1C53C696004F3D19 /* ClientApi.swift in Sources */,
 				C8D84F411C54C953004F3D19 /* TopicsController.swift in Sources */,
+				C84AE05E1C9D5A2E002740DB /* ProfileHeader.swift in Sources */,
 				C8A44A061C81BC1E00105387 /* LoginController.swift in Sources */,
 				C8A44A021C78A3FF00105387 /* TopicResponse.swift in Sources */,
 				C8A449FC1C7866BB00105387 /* MyController.swift in Sources */,
