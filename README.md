@@ -8,4 +8,4 @@ learn swift on ios
 ![](https://raw.githubusercontent.com/huxinghai1988/ruby-china-swift/master/2.png)
 
 #### 个人资料
-![](https://raw.githubusercontent.com/huxinghai1988/ruby-china-swift/master/2.png)
+![](https://raw.githubusercontent.com/huxinghai1988/ruby-china-swift/master/3.png)
